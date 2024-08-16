@@ -1,4 +1,4 @@
-export const selectionSort = (arr) => {
+export const selectionSort = (arr: number[]) => {
   const n = arr.length;
 
   // 배열의 각 요소를 순차적으로 확인

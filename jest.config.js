@@ -1,5 +1,10 @@
 module.exports = {
+  preset: 'ts-jest',
+  testEnvironment: 'node',
+  verbose: true,
   transform: {
-    '^.+\\.jsx?$': 'babel-jest', // JavaScript 파일을 Babel로 트랜스파일
+    '^.+\\.tsx?$': ['ts-jest', { tsconfig: 'tsconfig.spec.json' }],
   },
+  roots: ['<rootDir>/src', '<rootDir>/__test__'],
+  testMatch: ['<rootDir>/__test__/**/*.test.ts'],
 };
