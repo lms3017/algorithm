@@ -2,6 +2,7 @@
 export const insertionSort = (arr: number[]) => {
   const n = arr.length;
 
+  // arr[i], arr[0]부터 비교하면서 시작
   for (let i = 1; i < n; i++) {
     let key = arr[i];
     let j = i - 1;
